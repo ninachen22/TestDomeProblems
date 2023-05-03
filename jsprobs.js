@@ -9,15 +9,15 @@ function simulate(entries) {
         var x = entries[index];
         var t1 = entries[index - 3];
         var t2 = entries[index + 4];
-        if (t1.index >= 0 && t2.index < entries.length) {
+        if ((index - 3) >= 0 && (index + 4) < entries.length) {
             if (x <= t1 || x <= t2) {
                 entries[index] = 0;
             }
-        } if (t1.index < 0 && t2.index < entries.length) {
+        } if ((index - 3) < 0 && (index + 4) < entries.length) {
             if (x <= t2) {
                 entries[index] = 0;
             }
-        } if (t1.index >= 0 && t2.index >= entries.length) {
+        } if ((index - 3) >= 0 && (index + 4) >= entries.length) {
             if (x <= t1) {
                 entries[index] = 0;
             }
