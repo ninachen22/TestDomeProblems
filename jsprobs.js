@@ -30,3 +30,7 @@ function simulate(entries) {
   console.log(simulate(records));
   // Expected output
   // [19, 0, 0, 87, 0, 0, 0, 77, 77, 0, 0]
+
+
+
+  
